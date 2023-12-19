@@ -6,95 +6,102 @@
 	<title></title>
 	<style>
 		.wrapper {
-	grid-gap: 10px;
-	border: 5px;
-	border-color: white;
-}
+			grid-gap: 10px;
+			border: 5px;
+			border-color: white;
+		}
 
-.links {
-  display: flex;
-	margin-left: auto;
-	margin-right: auto;
-	width: 450px;
-	height: 200px;
-  margin-top: 50px;
-  justify-content: space-between;
-}
+		.links {
+			display: flex;
+			margin-left: auto;
+			margin-right: auto;
+			width: 450px;
+			height: 200px;
+			margin-top: 50px;
+			justify-content: space-between;
+		}
 
-.header {
-	margin-left: auto;
-	margin-right: auto;
-	width: 300px;
-	height: 100px;
-}
+		.header {
+			margin-left: auto;
+			margin-right: auto;
+			width: 300px;
+			height: 100px;
+		}
 
-.examples {
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
-	height: 600px;
-  display: flex;
-  padding: 10px;
-  gap: 10px; 
-}
+		.examples {
+			margin-left: auto;
+			margin-right: auto;
+			width: 80%;
+			height: 600px;
+			display: flex;
+			padding: 10px;
+			gap: 20px;
+		}
 
-.examples>img {
-  flex-grow: 1;
-}
+		.example {
+			border: 1px solid white;
+			box-shadow: inset 0px 0px 81px 30px #FF9E9E, 0px 0px 20px 10px #FF9E9E;
+			color: white;
+		}
 
-:root {
-  --shadow-color: #FF9E9E;
-  --shadow-color-light: white;
-}
+		.examples>img {
+			flex-grow: 1;
+		}
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+		:root {
+			--shadow-color: #FF9E9E;
+			--shadow-color-light: white;
+		}
 
-body {
-  font-family: "Archivo", sans-serif;
-  background-color: black;
-  padding: 40px;
-}
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
 
-.icons {
-	fill: white;
-}
+		body {
+			font-family: "Archivo", sans-serif;
+			background-color: black;
+			padding: 40px;
+		}
 
-p {
-  font-size: 65px;
-  text-transform: uppercase;
-  font-family: "Archivo Black", "Archivo", sans-serif;
-  font-weight: normal;
-  display: block;
-  text-align: center;
-}
+		.icons {
+			fill: white;
+		}
 
-.logo-1 {
-  color: white;
-  animation: neon 3s infinite;
-}
+		p {
+			font-size: 65px;
+			text-transform: uppercase;
+			font-family: "Archivo Black", "Archivo", sans-serif;
+			font-weight: normal;
+			display: block;
+			text-align: center;
+		}
 
-@keyframes neon {
-  0% {
-    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
-    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
-    0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
-  }
-  50% {
-    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
-    0 0 5px var(--shadow-color-light), 0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
-    0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color), 0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
-  }
-  100% {
-    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
-    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
-    0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
-  }
-}
+		.logo-1 {
+			color: white;
+			animation: neon 3s infinite;
+		}
 
+		@keyframes neon {
+			0% {
+				text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+					0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+					0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+			}
+
+			50% {
+				text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+					0 0 5px var(--shadow-color-light), 0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
+					0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color), 0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
+			}
+
+			100% {
+				text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+					0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+					0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+			}
+		}
 	</style>
 </head>
 
@@ -104,9 +111,9 @@ p {
 			<p class="logo-1">Name</p>
 		</div>
 		<div class="box examples">
-			<img src="images/test.jpg" alt="" />
-			<img src="images/test.jpg" alt="" />
-			<img src="images/test.jpg" alt="" />
+			<img class="example" src="images/test.jpg" alt="" />
+			<img class="example" src="images/test.jpg" alt="" />
+			<img class="example" src="images/test.jpg" alt="" />
 		</div>
 		<div class="links">
 			<a href="#"><img src="images/telegram-svgrepo-com.svg" width="50px" height="50px" /></a>
